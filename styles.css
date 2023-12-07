@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background: #f5f5f5;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+    padding: 3px 5px;
+}
+
+a:hover {
+    color: #4479d9;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navbar-container {
+        width: 100%;
+        height: 60px;
+        border-radius: 5px;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid #dddddd;
+
+        .title-page{
+            color: #4479d9;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.container {
+    padding: 0 5px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    .presentation {
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        .img-box{
+            width: 500px;
+            height: 500px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .profile-img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+            
+        }
+        .title{
+            color: #4479d9;
+            font-size: 3.6rem;
+            text-align: center;
+            width: 400px;
+        }
+    }
+
+    .data-icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 120px 0;
+
+        .icons-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            gap: 15px;
+            width: 200px;
+            height: 200px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            .icons {
+                font-size: 70px;
+                color: #4479d9;
+                font-weight: 600;
+            }
+          
+        }
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 80px 0;
+        gap: 10px;
+        .projects-text{
+            color: #4479d9;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .projects-subtext{
+            color: #818181;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        .projects-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 50px 0;
+
+            .projects {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background: white;
+                padding-bottom: 10px;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                .projects-img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    .hobbies-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+        gap: 30px;
+
+        .hobbies-text{
+            color: #4479d9;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .cards {
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .top-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .tarjet {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: white;
+                    border-radius: 5px;
+                    
+                    overflow: hidden;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    .hobbies-img {
+                        width: 450px;
+                    }
+
+                }
+
+
+            }
+
+            .bottom-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .tarjet {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: white;
+                    border-radius: 5px;
+                    
+                    overflow: hidden;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                    .hobbies-img {
+                        width: 450px;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+    .grade-container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+        gap: 50px;
+        .grade-text{
+            color: #4479d9;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .grade-description{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            width: 70%;
+            .description{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0a0a;
+    color: white;
+}
+
+.tarjet p{
+    padding: 10px;
+}
